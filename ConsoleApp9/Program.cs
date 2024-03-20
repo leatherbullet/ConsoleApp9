@@ -9,14 +9,17 @@ namespace ConsoleApp9
             int[] numbers = { 1, 2, 3, 4 };
             int tempNumber;
             int userInput;
-
+            int shift;
+            
             foreach (int number in numbers)
                 Console.Write(number + " ");
 
             Console.WriteLine("\nна сколько позиций влево хотите сместить?");
             userInput = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < userInput; i++)
+            shift = userInput % number.Length
+            
+            for (int i = 0; i < shift; i++)
             {
                 for (int j = 0; j < numbers.Length - 1; j++)
                 {
